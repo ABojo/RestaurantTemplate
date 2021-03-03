@@ -5,7 +5,7 @@ export default () => {
     const menu = newElement({type:'div', className: 'menu'});
 
     for(let i=0; i < 6; i++) {
-        const menuItem = newElement({type:'div', className: 'menu__item', style: {backgroundImage: `linear-gradient(rgb(0,0,0,.8), rgb(0,0,0,.8)), url('/img/food${i+1}.jpeg')`}});
+        const menuItem = newElement({type:'div', className: 'menu__item', style: {backgroundImage: `linear-gradient(rgb(0,0,0,.8), rgb(0,0,0,.8)), url('img/food${i+1}.jpeg')`}});
         const menuItemPrice = newElement({type: 'p', className: 'menu__item-price', textContent: '$11.95'})
         const menuItemHeading = newElement({type: 'h1', className: 'menu__item-heading', textContent: 'Meal name'});
         const menuItemCalories = newElement({type: 'p', className: 'menu__item-calories', textContent: '1000 calories'});
